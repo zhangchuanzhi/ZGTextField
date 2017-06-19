@@ -26,6 +26,7 @@
 		2324443C1EF775B5009D3A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2324443F1EF775B5009D3A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		232444411EF775B5009D3A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232444471EF775E1009D3A2E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +63,6 @@
 				232444341EF775B5009D3A2E /* AppDelegate.m */,
 				232444361EF775B5009D3A2E /* ViewController.h */,
 				232444371EF775B5009D3A2E /* ViewController.m */,
-				232444391EF775B5009D3A2E /* Main.storyboard */,
-				2324443C1EF775B5009D3A2E /* Assets.xcassets */,
-				2324443E1EF775B5009D3A2E /* LaunchScreen.storyboard */,
-				232444411EF775B5009D3A2E /* Info.plist */,
 				232444301EF775B5009D3A2E /* Supporting Files */,
 			);
 			path = ZGTextField;
@@ -74,7 +71,12 @@
 		232444301EF775B5009D3A2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				232444391EF775B5009D3A2E /* Main.storyboard */,
+				2324443C1EF775B5009D3A2E /* Assets.xcassets */,
+				2324443E1EF775B5009D3A2E /* LaunchScreen.storyboard */,
+				232444411EF775B5009D3A2E /* Info.plist */,
 				232444311EF775B5009D3A2E /* main.m */,
+				232444471EF775E1009D3A2E /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +112,7 @@
 				TargetAttributes = {
 					2324442C1EF775B5009D3A2E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = RAJ2TC584R;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -274,6 +277,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RAJ2TC584R;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZGTextField/PrefixHeader.pch";
 				INFOPLIST_FILE = ZGTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = offcn.ZGTextField;
@@ -285,6 +291,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RAJ2TC584R;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZGTextField/PrefixHeader.pch";
 				INFOPLIST_FILE = ZGTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = offcn.ZGTextField;
